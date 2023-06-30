@@ -24,7 +24,8 @@ const App = () => {
       return setMenuItems(menu)
     }
     // console.log(category)
-    const newItems = menu.filter((item) => { item.category === category })
+    //for specific item category 
+    const newItems = menu.filter((item) =>  item.category === category )
     console.log(newItems)
     setMenuItems(newItems)
   }
